@@ -1,0 +1,40 @@
+Source: kota-metapackages
+Section: misc
+Priority: optional
+Homepage: https://github.com/kotarou3/kota-metapackages
+Standards-Version: 3.9.2
+Build-Depends: equivs
+
+Package: kota-standard
+Version: 1.0
+Maintainer: 小太 <nospam@kota.moe>
+
+Depends:
+# Core binaries
+    locales, nano, ssh, sudo,
+# Network
+    dnsutils, iperf, iputils-ping, ncat, nmap, tcpdump, traceroute, whois,
+# Monitoring
+    htop, iotop, lm-sensors, lshw, ltrace, nethogs, strace,
+# Development
+    g++-multilib, git, python-pip, python3-pip,
+# Packaging
+    aptitude, command-not-found, software-properties-common, unattended-upgrades,
+# Other useful stuff
+    bash-completion, curl, p7zip-rar, rlwrap, rsync, screen, sshfs, wget, xxd,
+
+Recommends:
+# Bootloader
+    grub-efi-amd64,
+# Kernel
+    linux-headers-amd64, linux-image-amd64, firmware-linux,
+# Filesystem
+    btrfs-progs, cryptsetup-initramfs, lvm2, parted,
+
+Breaks:
+# Don't want any big MTAs
+    bsd-mailx, exim4, exim4-base, postfix,
+# Don't want signed grub since it breaks booting from LUKS
+    grub-efi-amd64-signed,
+
+Description: CLI-only stuff. Suitable for servers

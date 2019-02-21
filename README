@@ -1,0 +1,13 @@
+Convenience metapackages for the typical binaries I have installed.
+
+Build with the equivs tool:
+$ equivs-build kota-standard & equivs-build kota-desktop & wait
+
+Install with:
+$ sudo dpkg --add-architecture i386
+$ sudo dpkg -i *.deb
+$ sudo apt install -f
+$ sudo aptitude install '?reverse-recommends(kota-standard)'
+
+Optionally:
+$ sudo apt install etckeeper

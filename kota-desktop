@@ -1,0 +1,42 @@
+Source: kota-metapackages
+Section: misc
+Priority: optional
+Homepage: https://github.com/kotarou3/kota-metapackages
+Standards-Version: 3.9.2
+Build-Depends: equivs
+
+Package: kota-desktop
+Version: 1.0
+Maintainer: 小太 <nospam@kota.moe>
+
+Depends: kota-standard,
+# Desktop environment
+    gdm3, gnome-session-flashback, gnome-themes-standard, fonts-cantarell, sensors-applet,
+# Desktop aesthetics
+    dmz-cursor-theme, papirus-icon-theme,
+# GPU related
+    mesa-utils, mesa-va-drivers, mesa-vulkan-drivers, vulkan-tools,
+# Core tools
+    eog, evince, file-roller, firefox, gedit, gedit-plugins, gnome-terminal, gnome-tweaks, nautilus,
+# Diagnostic tools
+    evtest, libinput-tools, wireshark-gtk, xinput, xdotool,
+# Audio, Images, Video
+    audacity, gimp, inkscape, libavcodec-extra, sox, vlc, youtube-dl,
+# Wine related
+    dxvk, exe-thumbnailer, wine-development, wine64-development, wine32-development, winetricks,
+# International fonts and input
+    fonts-noto, ibus-anthy, ibus-rime,
+# Other useful tools
+    anacron, chromium, dconf-editor, ghex, gparted, keepassxc, meld, oathtool, pdftk,
+# Fun
+    sl,
+
+Breaks:
+# Don't need accessibility
+    gnome-accessibility-themes,
+# Don't need sharing
+    gnome-online-accounts, gnome-user-share, rygel,
+# youtube-dl recommends some unwanted players
+    mplayer, mpv,
+
+Description: Full desktop install
