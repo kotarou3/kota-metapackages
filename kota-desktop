@@ -6,7 +6,7 @@ Standards-Version: 3.9.2
 Build-Depends: equivs
 
 Package: kota-desktop
-Version: 1.0
+Version: 1.1
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends: kota-standard,
@@ -38,5 +38,7 @@ Breaks:
     gnome-online-accounts, gnome-user-share, rygel,
 # youtube-dl recommends some unwanted players
     mplayer, mpv,
+# wine-development provides wine, but APT wants to install wine-stable anyways
+    wine32, wine64,
 
 Description: Full desktop install
