@@ -6,7 +6,7 @@ Standards-Version: 3.9.2
 Build-Depends: equivs
 
 Package: kota-standard
-Version: 1.0
+Version: 1.2
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends:
@@ -15,7 +15,7 @@ Depends:
 # Network
     dnsutils, iperf, iputils-ping, ncat, nmap, tcpdump, traceroute, whois,
 # Monitoring
-    htop, iotop, lm-sensors, lshw, ltrace, nethogs, strace,
+    htop, iotop, lm-sensors, lshw, ltrace, net-tools, nethogs, strace,
 # Development
     g++-multilib, git, python-pip, python3-pip,
 # Packaging
