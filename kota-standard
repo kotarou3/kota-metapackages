@@ -2,11 +2,11 @@ Source: kota-metapackages
 Section: misc
 Priority: optional
 Homepage: https://github.com/kotarou3/kota-metapackages
-Standards-Version: 3.9.2
-Build-Depends: equivs
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-standard
-Version: 1.2
+Version: 1.3
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends:
@@ -17,7 +17,7 @@ Depends:
 # Monitoring
     htop, iotop, lm-sensors, lshw, ltrace, net-tools, nethogs, strace,
 # Development
-    g++-multilib, git, python-pip, python3-pip,
+    g++-multilib, git, python3-pip,
 # Packaging
     aptitude, command-not-found, software-properties-common, unattended-upgrades,
 # Other useful stuff

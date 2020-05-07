@@ -2,11 +2,11 @@ Source: kota-metapackages
 Section: misc
 Priority: optional
 Homepage: https://github.com/kotarou3/kota-metapackages
-Standards-Version: 3.9.2
-Build-Depends: equivs
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-desktop
-Version: 1.1
+Version: 1.3
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends: kota-standard,
