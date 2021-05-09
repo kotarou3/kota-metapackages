@@ -7,7 +7,7 @@ Install with:
 $ sudo dpkg --add-architecture i386
 $ sudo dpkg -i *.deb
 $ sudo apt install -f
-$ sudo aptitude install '?reverse-recommends(kota-standard)'
+$ sudo aptitude install '?reverse-recommends(kota-standard) ?architecture(native)'
 
 Optionally:
 $ sudo apt install etckeeper
