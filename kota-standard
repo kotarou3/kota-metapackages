@@ -6,7 +6,7 @@ Standards-Version: 4.5.0
 Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-standard
-Version: 1.3
+Version: 1.4
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends:
@@ -15,7 +15,7 @@ Depends:
 # Network
     dnsutils, iperf, iputils-ping, ncat, nmap, tcpdump, traceroute, whois,
 # Monitoring
-    htop, iotop, lm-sensors, lshw, ltrace, net-tools, nethogs, strace,
+    htop, iotop, lm-sensors, lshw, ltrace, net-tools, nethogs, pciutils, strace, usbutils,
 # Development
     g++-multilib, git, python3-pip,
 # Packaging
