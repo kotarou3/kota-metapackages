@@ -6,7 +6,7 @@ Standards-Version: 4.5.0
 Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-desktop
-Version: 1.3
+Version: 1.4.1
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends: kota-standard,
@@ -23,7 +23,7 @@ Depends: kota-standard,
 # Audio, Images, Video
     audacity, gimp, inkscape, libavcodec-extra, sox, vlc, youtube-dl,
 # Wine related
-    dxvk, exe-thumbnailer, wine-development, wine64-development, wine32-development, winetricks,
+    dxvk, icoextract-thumbnailer, wine-development, wine64-development, wine32-development, winetricks,
 # International fonts and input
     fonts-noto, ibus-anthy, ibus-rime,
 # Other useful tools
