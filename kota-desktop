@@ -6,12 +6,12 @@ Standards-Version: 4.5.0
 Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-desktop
-Version: 1.4.1
+Version: 1.4.2
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends: kota-standard,
 # Desktop environment
-    gdm3, gnome-session-flashback, gnome-themes-standard, fonts-cantarell, sensors-applet,
+    gdm3, gnome-session-flashback, gnome-themes-extra, fonts-cantarell, sensors-applet,
 # Desktop aesthetics
     dmz-cursor-theme, papirus-icon-theme,
 # GPU related
@@ -19,7 +19,7 @@ Depends: kota-standard,
 # Core tools
     eog, evince, file-roller, firefox, gedit, gedit-plugins, gnome-terminal, gnome-tweaks, nautilus,
 # Diagnostic tools
-    evtest, libinput-tools, wireshark-gtk, xinput, xdotool,
+    evtest, libinput-tools, wireshark, xinput, xdotool,
 # Audio, Images, Video
     audacity, gimp, inkscape, libavcodec-extra, sox, vlc, youtube-dl,
 # Wine related
