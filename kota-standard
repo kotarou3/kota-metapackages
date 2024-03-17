@@ -6,7 +6,7 @@ Standards-Version: 4.5.0
 Build-Depends: debhelper-compat (= 12), equivs
 
 Package: kota-standard
-Version: 1.4
+Version: 1.4.3
 Maintainer: 小太 <nospam@kota.moe>
 
 Depends:
@@ -15,13 +15,13 @@ Depends:
 # Network
     dnsutils, iperf, iputils-ping, ncat, nmap, tcpdump, traceroute, whois,
 # Monitoring
-    htop, iotop, lm-sensors, lshw, ltrace, net-tools, nethogs, pciutils, strace, usbutils,
+    htop, iotop, lm-sensors, lshw, net-tools, nethogs, pciutils, strace, usbutils,
 # Development
-    g++-multilib, git, python3-pip,
+    g++, git, python3-pip,
 # Packaging
     aptitude, command-not-found, software-properties-common, unattended-upgrades,
 # Other useful stuff
-    bash-completion, curl, p7zip-rar, rlwrap, rsync, screen, sshfs, wget, xxd,
+    bash-completion, curl, 7zip-rar, rlwrap, rsync, screen, sshfs, wget, xxd,
 
 Recommends:
 # Bootloader
@@ -30,6 +30,10 @@ Recommends:
     linux-headers-amd64, linux-image-amd64, firmware-linux,
 # Filesystem
     btrfs-progs, cryptsetup-initramfs, lvm2, parted,
+# Monitoring (no arm64 build: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1020891)
+    ltrace,
+# Development (x86 only)
+    g++-multilib,
 
 Breaks:
 # Don't want any big MTAs
